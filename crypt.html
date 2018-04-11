@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <title>Monoalphabetic substitution</title>
+  </head>
+  <body>
+    <!-- Page content -->
+    <main role="main" class="container">
+        <h1 class="mt-5 text-center" style="margin-bottom: 30px;">Monoalphabetic substitution</h1>
+        <!-- Text areas with action buttons -->
+        <div class="row" style="margin-bottom: 30px;">
+            <div class="col">
+                <h4 class="text-center">Plain Text</h4>
+                <div class="input-group">
+                    <textarea id="plain-text" class="form-control" aria-label="Plain Text" rows="10"></textarea>
+                    <div class="input-group-append">
+                        <button id="encrypt" class="btn btn-success" type="button">Encrypt &#8594;</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h4 class="text-center">Encrypted Text</h4>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <button id="decrypt" class="btn btn-danger" type="button">&#8592; Decrypt</button>
+                    </div>
+                    <textarea id="encrypted-text" class="form-control" aria-label="Encrypted Text" rows="10"></textarea>
+                </div>
+            </div>
+        </div>
+
+         <!-- Key input -->
+        <div class="row" style="margin-bottom: 30px;">
+            <div class="col">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">A</span>
+                    </div>
+                    <input type="text" class="form-control" id="A" aria-label="A" aria-describedby="A">
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">B</span>
+                    </div>
+                    <input type="text" class="form-control" id="B" aria-label="B" aria-describedby="B">
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">C</span>
+                    </div>
+                    <input type="text" class="form-control" id="C" aria-label="C" aria-describedby="C">
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">D</span>
+                    </div>
+                    <input type="text" class="form-control" id="D" aria-label="D" aria-describedby="D">
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">E</span>
+                    </div>
+                    <input type="text" class="form-control" id="E" aria-label="E" aria-describedby="E">
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">F</span>
+                    </div>
+                    <input type="text" class="form-control" id="F" aria-label="F" aria-describedby="F">
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">G</span>
+                    </div>
+                    <input type="text" class="form-control" id="G" aria-label="G" aria-describedby="G">
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">H</span>
+                    </div>
+                    <input type="text" class="form-control" id="H" aria-label="H" aria-describedby="H">
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">I</span>
+                    </div>
+                    <input type="text" class="form-control" id="I" aria-label="I" aria-describedby="I">
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">J</span>
+                    </div>
+                    <input type="text" class="form-control" id="J" aria-label="J" aria-describedby="J">
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">K</span>
+                    </div>
+                    <input type="text" class="form-control" id="K" aria-label="K" aria-describedby="K">
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">L</span>
+                    </div>
+                    <input type="text" class="form-control" id="L" aria-label="L" aria-describedby="L">
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">M</span>
+                    </div>
+                    <input type="text" class="form-control" id="M" aria-label="M" aria-describedby="M">
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">N</span>
+                    </div>
+                    <input type="text" class="form-control" id="N" aria-label="N" aria-describedby="N">
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">O</span>
+                    </div>
+                    <input type="text" class="form-control" id="O" aria-label="O" aria-describedby="O">
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">P</span>
+                    </div>
+                    <input type="text" class="form-control" id="P" aria-label="P" aria-describedby="P">
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Q</span>
+                    </div>
+                    <input type="text" class="form-control" id="Q" aria-label="Q" aria-describedby="Q">
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">R</span>
+                    </div>
+                    <input type="text" class="form-control" id="R" aria-label="R" aria-describedby="R">
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">S</span>
+                    </div>
+                    <input type="text" class="form-control" id="S" aria-label="S" aria-describedby="S">
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">T</span>
+                    </div>
+                    <input type="text" class="form-control" id="T" aria-label="T" aria-describedby="T">
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">U</span>
+                    </div>
+                    <input type="text" class="form-control" id="U" aria-label="U" aria-describedby="U">
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">V</span>
+                    </div>
+                    <input type="text" class="form-control" id="V" aria-label="V" aria-describedby="V">
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">W</span>
+                    </div>
+                    <input type="text" class="form-control" id="W" aria-label="W" aria-describedby="W">
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">X</span>
+                    </div>
+                    <input type="text" class="form-control" id="X" aria-label="X" aria-describedby="X">
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Y</span>
+                    </div>
+                    <input type="text" class="form-control" id="Y" aria-label="Y" aria-describedby="Y">
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Z</span>
+                    </div>
+                    <input type="text" class="form-control" id="Z" aria-label="Z" aria-describedby="Z">
+                </div>
+            </div>
+        </div>
+
+        <!-- Alphabet control -->
+        <div class="row">
+            <div class="col">
+                    <div class="input-group">
+                        <input id="alphabet" type="text" class="form-control" placeholder="ABCDEFGHIJKLMNOPQRSTUVWXYZ" aria-label="Alphabet" aria-describedby="alphabet">
+                        <div class="input-group-append">
+                            <button id="generate-alpha" class="btn btn-warning" type="button">Generate Alphabet</button>
+                            <button id="import-alpha" class="btn btn-primary" type="button">Import Alphabet</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- Crypt JS -->
+    <script src="./crypt.js"></script>
+  </body>
+</html>
